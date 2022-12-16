@@ -6,7 +6,7 @@ from django.dispatch import receiver
 class Profile(models.Model):
     user = models.OneToOneField(User,on_delete = models.CASCADE)
     gender = models.CharField(max_length = 42)                           # radio select
-    city = models.CharField(max_length = 44, unique = True)              # select
+    # city = models.CharField(max_length = 44, unique = True)              # select
     phone_number = models.CharField(max_length = 35)      
     block_call = models.CharField(max_length = 10, null = True)          # radio select
     block_sms = models.CharField(max_length = 10, null = True)           # radio select
